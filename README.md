@@ -79,7 +79,7 @@ This application provides an API backend built with **FastAPI** to manage contac
 *   **Database (`contacts_workflow.db`):** Stores contact info (schema defined in `init_db`).
 *   **Pydantic Models:** Define API data structures for validation (e.g., `ContactCreate`, `CampaignRunPayload`).
 *   **CrewAI Agents & LLM:**
-    *   Uses `langchain_google_genai.ChatGoogleGenerativeAI` to interact with the **Gemini Pro model**.
+    *   Uses `langchain_google_genai.ChatGoogleGenerativeAI` to interact with the **Gemini model**.
     *   Agents (`research_agent`, `email_writer_agent`, `verification_agent`) leverage the Gemini LLM for their tasks.
 *   **CrewAI Tools:** `WebResearchTool` for searching news and extracting URL content (still relies on potentially unreliable web scraping).
 *   **Communication Functions:** `send_email` (placeholder), `send_whatsapp` (uses Twilio).
