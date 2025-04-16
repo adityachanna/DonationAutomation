@@ -2,7 +2,7 @@
 
 ## Overview
 
-This application provides an API backend built with **FastAPI** to manage contacts and automate outreach campaigns for flood relief fundraising. It leverages the **CrewAI** framework integrated with **Google's Gemini Pro** language model (via LangChain) to research flood situations, generate personalized donation requests (Email or WhatsApp), and optionally verify incoming requests. Contacts are stored in a local SQLite database. This version uses Pydantic for data validation and FastAPI's features for improved developer experience and automatic API documentation.
+This application provides an API backend built with **FastAPI** to manage contacts and automate outreach campaigns for flood relief fundraising. It leverages the **CrewAI** framework integrated with **Google's Gemini 2 Flash** language model (via LangChain) to research flood situations, generate personalized donation requests (Email or WhatsApp), and optionally verify incoming requests. Contacts are stored in a local SQLite database. This version uses Pydantic for data validation and FastAPI's features for improved developer experience and automatic API documentation.
 
 ## Features
 
