@@ -188,15 +188,23 @@ curl -X 'POST' \
 ### Trigger a Campaign
 
 ```bash
-curl -X 'POST' \
-  'http://127.0.0.1:8000/campaign/trigger/' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "flood_location": "Miami, Florida",
-  "target_contact_ids": [1, 2, 3],
-  "email_subject": "Urgent: {location} Needs Your Help"
-}'
+{
+  "status": "Campaign trigger processed",
+  "flood_location": "Odissa",
+  "ai_research_summary": "Odissa has been struck by severe flooding following torrential monsoon rains, leading to widespread displacement and damage to homes and infrastructure across the state.",
+  "ai_message_template_used": "The people of Odissa are facing immense hardship due to the recent devastating floods. Your support can provide crucial aid, including food, clean water, and medical assistance, to those who have lost everything. Please donate now to help us reach those most in need. [Donation Link]",
+  "ai_verification": "Given the widespread flooding and displacement reported, relief efforts are undoubtedly necessary.",
+  "donation_link_included": "https://www.example-relief-fund.org/donate/flood-support",
+  "contacts_target_ids": [
+    1,
+    2
+  ],
+  "contacts_found_in_db": 2,
+  "emails_sent_successfully": 0,
+  "emails_failed_or_skipped_config": 2,
+  "contacts_skipped_no_email": 0,
+  "ai_error_details": null
+}
 ```
 
 ## Error Handling
