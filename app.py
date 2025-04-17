@@ -47,7 +47,7 @@ try:
         raise ValueError("GEMINI_API_KEY not found in environment variables.")
     # Using gemini-1.5-flash as it's generally available and capable
     llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=google_api_key)
-    print("✅ Gemini LLM Initialized (gemini-1.5-flash)")
+    print("✅ Gemini LLM Initialized (gemini-2.0-flash)")
 except Exception as e:
     print(f"❌ Error initializing Gemini LLM: {e}")
     print("   Please ensure GOOGLE_API_KEY is set correctly in your .env file.")
